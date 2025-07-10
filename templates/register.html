@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>収支登録</title></head>
+<body>
+    <h1>収支登録</h1>
+    <form method="post">
+        日付: <input type="date" name="date"><br>
+        カテゴリ: <input type="text" name="category"><br>
+        金額: <input type="number" name="amount"><br>
+        <input type="submit" value="登録">
+    </form>
+    <h2>削除</h2>
+    <form method="post" action="/delete">
+        ID: <input type="number" name="id">
+        <input type="submit" value="削除">
+    </form>
+    <a href="/">← 戻る</a>
+</body>
+</html>
